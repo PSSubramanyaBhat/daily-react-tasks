@@ -1,0 +1,71 @@
+.Page{
+    /* display: flex; */
+    margin-top: 2cm;
+    background-color: grey;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 0.3cm;
+    margin-right: 39.5%;
+    margin-left: 2cm;
+    width: 465px;
+    height: 500px;
+}
+/* .background {
+
+} */
+img {
+    border-radius: 100%;
+    border: 2px solid black;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.Heading{
+    margin-left: 110px; 
+    margin-right: 0
+}
+form{
+    padding-top: 20px;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-left: 20px; 
+    margin-right: 0;
+    padding-left: 0.4cm;
+}
+button{
+    margin-top: 20px;
+    margin-left: 180px; 
+    margin-right: 0;
+    width: 100px;
+    height: 40px;
+    /* align-items: center; */
+    border-radius: 5px; 
+    border-width: 1px;
+    background-color: rgb(12, 206, 12);
+}
+/* .BtnBorder{
+    border-width: 2px;
+    /* border-radius: 5px; 
+    border-color: yellow;
+} */
+
+/* .BtnBorderRound{
+    border-radius: 5px;
+} */
+
+/* .Bordered{
+    border-width: 4px;
+    border-color: red;
+} */
+
+h4{
+    padding-left: 0.6cm;
+}
+h5{
+    padding-left: 0.6cm;
+}
+

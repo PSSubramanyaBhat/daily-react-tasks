@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    img {
+        border-radius: 100%;
+        border: 2px solid black;
+        align-content: center;
+        vertical-align: middle;
+    }
+
+    .centerAlign {
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+
+    .horizontalCenterAlign {
+        position: fixed;
+        margin-top: +20px;
+        margin-left: +20px;
+    }
+    
+</style>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.7.2/prop-types.js"
+        integrity="sha512-Ttnt6nUh/1oV+4T/KWkG/ORvlIEOZohMCT/GIzelxTceoIreR2A1r6zmgFnEvi7GgstoDblmpMO/Gi9CXKTqGQ=="
+        crossorigin="anonymous"></script>
+
+    <script type="text/babel">
+
+        const CircularAvatar = ({ image, alt, name }) => {
+            return (
+
+                <div class="centerAlign">
+                    <img src={image} alt width="200" height="200" />
+                    <h3 class="horizontalCenterAlign">  {name}</h3>
+                </div>
+
+            );
+        };
+
+        const divImageElement = (
+            <div>
+                <CircularAvatar image={"assets/images/Sasuke Demigod.jpg"} alt={"Girl in a jacket"} name={" PS Subramanya Bhat"} />
+            </div>
+        );
+
+        ReactDOM.render(divImageElement, document.getElementById('root'));
+    </script>
+</body>
+
+</html>

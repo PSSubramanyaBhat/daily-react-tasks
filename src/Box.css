@@ -1,0 +1,15 @@
+.Box {
+    border: solid 2px red;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.Box--rounded {
+    border-radius: 50%;
+}
+
+.ThickBorder {
+    border-width: 4px;
+}
