@@ -1,33 +1,73 @@
 import './App.css';
-
 import Counter from './Counter';
 // import RegistrationSamplePage from './RegistrationSamplePage';
-
 import React from 'react';
+import { readFromStorage, writeToStorage } from './LocalStorage';
+
+const COUNTER_DISPLAYED = 'countTag';
+
+function disableClearbutton() {
+    document.getElementById("clear").disabled = true;
+}
+
+function enableClearbutton() {
+    document.getElementById("clear").disabled = false;
+}
 
 function App() {
+    let [counter, setCounter] = React.useState(JSON.parse(localStorage.getItem("countVal")) || 0);
 
-    let [counter, setCounter] = React.useState(0);
+    let [flag, setFlag] = React.useState(() => {
+        const flagFromStorage = readFromStorage(COUNTER_DISPLAYED);
+        if (flagFromStorage == undefined) {
+            return true;
+        } else {
+            return flagFromStorage;
+        }
+    });
     return (
         <div className="App">
             {/* <Counter /> */}
-            <Counter
-                upperLimit={20} lowerLimit={0} counterBase={5}
-                counterCallback={(count) => {
-                    counter = count;
-                    setCounter(count);
+            {flag && (
+                <Counter
+                    // upperLimit={20} lowerLimit={0} counterBase={5}
+                    counterCallback={(count) => {
+                        counter = count;
+                        setCounter(count);
+                    }}
+                />
+            )}
+            <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
+            <button className="ToggleButton"
+                onClick={() => {
+                    setFlag(!flag);
+                    writeToStorage(COUNTER_DISPLAYED, !flag);
+                    enableClearbutton();
                 }}
+            >
+                Toggle Counter
+            </button>
 
-            />
+            <button id="clear" className="ClearStorageButton"
+                onClick={() => {
 
-            <h1>The most recent value of the counter is: {counter}</h1>
+                    localStorage.removeItem(COUNTER_DISPLAYED);
+
+                    disableClearbutton();
+                    
+                    
+                }}
+            >
+                Clear m/y
+            </button>
         </div>
 
 
+
         /*This snippet is to display Sample Registration Form */
-        // <div className="App">
+        // < className="App">
         //     <RegistrationSamplePage></RegistrationSamplePage>
-        // </div>
+        // </>
     );
 }
 

@@ -5,6 +5,24 @@
     background-color: lightblue;
 }
 
+.ToggleButton{
+    margin-left: 20px;
+    background-color: rgb(62, 204, 62);
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.MinMarginWidth{
+    margin-left: 20px;
+}
+.ClearStorageButton{
+    margin-left: 2cm;
+    background-color: rgb(62, 204, 62);
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
 .App-logo {
     height: 40vmin;
     pointer-events: none;

@@ -3,11 +3,31 @@
   padding:15px;
 }
 
+.CounterButtons{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(62, 204, 62);
+  height: 40px;
+  width: 60px;
+  border-radius: 10px;
+}
+
 .Label {
   margin-left:5px;
   margin-right:5px;
+  margin-top: 10px;
 }
 
-.Multipler{
+.Multiplier{
   margin-left:10px;
+  margin-right:10px;
+  
+}
+.InputField{
+  margin-left:15px;
+  margin-right:10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  padding-left: 15px;
 }
