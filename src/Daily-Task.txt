@@ -1,5 +1,36 @@
+---/* Mail ROBOSOFT OFFICIAL Ananath or someone regarding MAC */--- VVI
+
 /* Task1 : Tomorrow rewrite the counter code with useStorageLocation --> custom Hook used by sir for Counter Program. */
 
-/*Task 2: Try user custom Hook for Timer program */
+/* Task 2: Try user custom Hook for Timer program */
+
+/* Task 3: Try branching out for custom Hooks of Timer and Try commenting unnecessary code and then try merging it back to main code and solve merge conflict */
+
+/* Task 4: Morning Attend Class of Sripada sir, 
+   Then after breakfast 1 and 1/2 hour of Udemy... (START from CHAPTER 9 of Module 2)
+   Complete Module 2...
+   Have bath and freshen up */
+
+/* Do Task 1... may be branch out if required, else commenting would do it... */
+
+/*.  ---HAVE LUNCH--- */
+
+/* Task 5: Plan and segregate Doc Reading to Compulsory and Extras and Done... */
+
+/* Task 6: Do Assignment of the ay if given... else try doing customHook for Timer (else you can keep it for weekend...)
+
+/* Task 7: Walking for 45 - 60 mins at 7 o'clock */
+
+/* Task 8: Udemy Module 3 start and finish by 12 o clock mid night. (INCLUDES DINNER TIME.....) */
+
+/* Task 9: JSinfo 2 Docs, Babel docs, 7pm docs, imperative VS declarative Doc */
+
+/* Task 10: Plan for Mod 4- Mod 8 of Udemy to be done on Saturday,
+	    List and plan pending docs to be read...
+	    List and Complete pending assignments from Day 1 - Day 10...
+	    Plan for new code, revise old codes...
+	    Plan for a new react Native App...
+	    Plan to do Java and Flutter Apps again, also Java, Flutter and React udemy Courses...
+*/
 
 /* ADD ADDITIONAL TASKS */

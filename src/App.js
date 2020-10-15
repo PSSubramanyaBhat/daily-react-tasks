@@ -30,68 +30,45 @@ function App() {
     });
     return (
 
+        // <Counter />
         //Working Counter Program From Here.....
-        // <div className="App">
-        //     {/* <Counter /> */}
-        //     {flag && (
-        //         <Counter
-        //             // upperLimit={20} lowerLimit={0} counterBase={5}
-        //             counterCallback={(count) => {
-        //                 counter = count;
-        //                 setCounter(count);
-        //             }}
-        //         />
-        //     )}
-        //     <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
-        //     <button className="ToggleButton"
-        //         onClick={() => {
-        //             setFlag(!flag);
-        //             writeToStorage(COUNTER_DISPLAYED, !flag);
-        //             enableClearbutton();
-        //         }}
-        //     >
-        //         Toggle Counter
-        //     </button>
+        /*
+        <div className="App">
+            {flag && (
+                <Counter
+                    // upperLimit={20} lowerLimit={0} counterBase={5}
+                    counterCallback={(count) => {
+                        counter = count;
+                        setCounter(count);
+                    }}
+                />
+            )}
+            <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
+            <button className="ToggleButton"
+                onClick={() => {
+                    setFlag(!flag);
+                    writeToStorage(COUNTER_DISPLAYED, !flag);
+                    enableClearbutton();
+                }}
+            >
+                Toggle Counter
+            </button>
 
-        //     {/* <button className="ResetButton">
-        //         Reset
-        //     </button>
-        //     <button className="StartStopButton">
-        //         Pause
-        //     </button>
-        //     <button className="StartStopButton">
-        //         Start
-        //     </button> */}
+                                    
 
-        //     <button id="clear" className="ClearStorageButton"
-        //         onClick={() => {
+            <button id="clear" className="ClearStorageButton"
+                onClick={() => {
 
-        //             localStorage.removeItem(COUNTER_DISPLAYED);
+                    localStorage.removeItem(COUNTER_DISPLAYED);
 
-        //             disableClearbutton();
+                    disableClearbutton();
 
 
-        //         }}
-        //     >
-        //         Clear m/y
-        //     </button>
-
-        //     <div>
-        //         <button className="ResetButton">
-        //             Reset
-        //         </button>
-        //     </div>
-        //     <div>
-        //         <button className="StartStopButton">
-        //             Pause
-        //         </button>
-        //     </div>
-        //     <div>
-        //         <button className="StartStopButton">
-        //             Start
-        //         </button>
-        //     </div>
-        // </div>
+                }}
+            >
+                Clear m/y
+            </button>
+        </div>  */
         //Working Counter Program Till Here......
 
 
