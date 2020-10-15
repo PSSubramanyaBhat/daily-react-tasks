@@ -1,0 +1,23 @@
+.StartStopButton{
+    /* display: block; */
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: rgb(62, 204, 62);
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+.ResetButton{
+    /* display: inline; */
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: rgba(228, 23, 23, 0.904);
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: white;
+}
+.VerticalBlocks {
+    display: block;
+}

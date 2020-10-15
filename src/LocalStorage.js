@@ -12,7 +12,7 @@ export function readFromStorage(key) {
 export function writeToStorage(key, value) {
     if (typeof localStorage !== 'undefined') {
         // Code for localStorage/sessionStorage.
-        return localStorage.setItem(key, value);
+        return localStorage.setItem(key, JSON.stringify(value));
     } else {
         // Sorry! No Web Storage support..
         throw new Error('Cant write to local storage!');

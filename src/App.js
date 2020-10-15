@@ -2,6 +2,8 @@ import './App.css';
 import Counter from './Counter';
 // import RegistrationSamplePage from './RegistrationSamplePage';
 import React from 'react';
+import TimerDisplay from './TimerDisplay';
+import Buttons from './Buttons';
 import { readFromStorage, writeToStorage } from './LocalStorage';
 
 const COUNTER_DISPLAYED = 'countTag';
@@ -15,7 +17,8 @@ function enableClearbutton() {
 }
 
 function App() {
-    let [counter, setCounter] = React.useState(JSON.parse(localStorage.getItem("countVal")) || 0);
+    // let [counter, setCounter] = React.useState(JSON.parse(localStorage.getItem("countVal")) || 0);
+    let [counter, setCounter] = React.useState(readFromStorage("countVal") || 0);
 
     let [flag, setFlag] = React.useState(() => {
         const flagFromStorage = readFromStorage(COUNTER_DISPLAYED);
@@ -26,48 +29,84 @@ function App() {
         }
     });
     return (
-        <div className="App">
-            {/* <Counter /> */}
-            {flag && (
-                <Counter
-                    // upperLimit={20} lowerLimit={0} counterBase={5}
-                    counterCallback={(count) => {
-                        counter = count;
-                        setCounter(count);
-                    }}
-                />
-            )}
-            <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
-            <button className="ToggleButton"
-                onClick={() => {
-                    setFlag(!flag);
-                    writeToStorage(COUNTER_DISPLAYED, !flag);
-                    enableClearbutton();
-                }}
-            >
-                Toggle Counter
-            </button>
 
-            <button id="clear" className="ClearStorageButton"
-                onClick={() => {
+        //Working Counter Program From Here.....
+        // <div className="App">
+        //     {/* <Counter /> */}
+        //     {flag && (
+        //         <Counter
+        //             // upperLimit={20} lowerLimit={0} counterBase={5}
+        //             counterCallback={(count) => {
+        //                 counter = count;
+        //                 setCounter(count);
+        //             }}
+        //         />
+        //     )}
+        //     <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
+        //     <button className="ToggleButton"
+        //         onClick={() => {
+        //             setFlag(!flag);
+        //             writeToStorage(COUNTER_DISPLAYED, !flag);
+        //             enableClearbutton();
+        //         }}
+        //     >
+        //         Toggle Counter
+        //     </button>
 
-                    localStorage.removeItem(COUNTER_DISPLAYED);
+        //     {/* <button className="ResetButton">
+        //         Reset
+        //     </button>
+        //     <button className="StartStopButton">
+        //         Pause
+        //     </button>
+        //     <button className="StartStopButton">
+        //         Start
+        //     </button> */}
 
-                    disableClearbutton();
-                    
-                    
-                }}
-            >
-                Clear m/y
-            </button>
+        //     <button id="clear" className="ClearStorageButton"
+        //         onClick={() => {
+
+        //             localStorage.removeItem(COUNTER_DISPLAYED);
+
+        //             disableClearbutton();
+
+
+        //         }}
+        //     >
+        //         Clear m/y
+        //     </button>
+
+        //     <div>
+        //         <button className="ResetButton">
+        //             Reset
+        //         </button>
+        //     </div>
+        //     <div>
+        //         <button className="StartStopButton">
+        //             Pause
+        //         </button>
+        //     </div>
+        //     <div>
+        //         <button className="StartStopButton">
+        //             Start
+        //         </button>
+        //     </div>
+        // </div>
+        //Working Counter Program Till Here......
+
+
+
+        //this is wroking Timer Program......
+        <div >
+            <Buttons></Buttons>
         </div>
 
 
 
         /*This snippet is to display Sample Registration Form */
-        // < className="App">
+        // <div className="App">
         //     <RegistrationSamplePage></RegistrationSamplePage>
-        // </>
+        // </div>
     );
 }
 
