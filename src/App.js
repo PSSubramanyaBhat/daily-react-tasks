@@ -3,6 +3,7 @@ import Counter from './Counter';
 // import RegistrationSamplePage from './RegistrationSamplePage';
 import React from 'react';
 import TimerDisplay from './TimerDisplay';
+import FormUI from './FormUI';
 import Buttons from './Buttons';
 import { readFromStorage, writeToStorage } from './LocalStorage';
 
@@ -77,6 +78,11 @@ function App() {
         <div >
             <Buttons></Buttons>
         </div>
+
+        //this is wroking Form Excercise Program......
+        // <div >
+        //     <FormUI></FormUI>
+        // </div>
 
 
 

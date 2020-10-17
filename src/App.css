@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+.clr {
+    clear: left;
+}
 .App {
     text-align: left;
 }
@@ -35,6 +41,16 @@
 .MinMarginWidth{
     margin-left: 20px;
 }
+.FooterTitleDesign{
+    margin-left: 60px;
+    border: 2px solid grey;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 400px;
+}
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .ClearStorageButton{
     margin-left: 2cm;
     background-color: rgb(62, 204, 62);
@@ -54,13 +70,24 @@
     border-radius: 10px;
     /* margin: 10px; */
     margin-top: 30px;
+    /* margin-left: 30px; */
+    width: 150px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 30px;
+    /* float: right; */
+    display: inline-block;
+    /* display: flex; */
+}
+.Box2 {
+    margin-top: 30px;
     margin-left: 30px;
     width: 200px;
     height: 40px;
     padding-left: 10px;
     padding-top: 10px;
-    /* display: flex; */
-    /* display: inline-block; */
+    float: left;
+    
 }
 .Box--rounded {
     border-radius: 50%;
