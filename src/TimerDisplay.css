@@ -2,8 +2,8 @@
     /* display: block; */
     margin-top: 10px;
     margin-left: 30px;
-    /* background-color: rgb(62, 204, 62); */
-    background-image: linear-gradient(to right, #67DDA3 , rgb(163, 241, 163)), radial-gradient(circle at top left, rgb(160, 155, 233),#342ca3);
+    background-color: rgb(132, 218, 165);
+    /* background-image: linear-gradient(to right, #67DDA3 , rgb(163, 241, 163)), radial-gradient(circle at top left, rgb(160, 155, 233),#342ca3); */
     /* height: 40px;
     width: 120px; */
     height: 60px;
@@ -12,12 +12,16 @@
     border-radius: 50%;
     border: none;
 }
-
+.StartStopTimerButton:hover{
+    background-color: rgb(243, 95, 95);
+    border-color: rgb(243, 95, 95);
+}
 .ResetTimerButton{
     /* display: inline; */
     margin-top: 0px;
     margin-left: 30px;
-    background-color: rgba(228, 23, 23, 0.904);
+    /* background-color: rgba(228, 23, 23, 0.904); */
+    background-color: rgb(243, 95, 95);;
     /* background-color: purple; */
     color: white;
     /* height: 40px;
