@@ -2,6 +2,7 @@ import './Counter.css';
 
 import React, { useEffect, useState } from 'react';
 import { readFromStorage, writeToStorage } from './LocalStorage';
+import { useLocalStorageState } from './useLocalStorageState';
 import PropTypes from 'prop-types';
 
 const COUNT = 'countVal';
@@ -10,7 +11,8 @@ const Counter = ({ counterBase, upperLimit, lowerLimit, counterCallback }) => {
 
     //Use lazy initialisation via a initialisation function as an argument to setState
     // rather than the actual value
-    let [count, setCount] = useState(() => readFromStorage(COUNT) || 0);
+    /*let [count, setCount] = useState(() => readFromStorage(COUNT) || 0);*/
+    let [count, setCount] = useLocalStorageState(0, COUNT);
 
     // let [multiplier, setMultiplier] = useState(Number(counterBase));  //This is to use a base value for mulltiplier... (this is a prop)
     let [multiplier, setMultiplier] = useState(2);

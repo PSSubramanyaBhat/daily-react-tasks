@@ -33,7 +33,7 @@ function App() {
 
         // <Counter />
         //Working Counter Program From Here.....
-        /*
+        
         <div className="App">
             {flag && (
                 <Counter
@@ -47,8 +47,15 @@ function App() {
             <h1 className="MinMarginWidth">The most recent value of the counter is: {counter}</h1>
             <button className="ToggleButton"
                 onClick={() => {
-                    setFlag(!flag);
-                    writeToStorage(COUNTER_DISPLAYED, !flag);
+                    // setFlag(!flag);
+                    // writeToStorage(COUNTER_DISPLAYED, !flag);
+                    // enableClearbutton();
+
+                    setFlag ((currentState) => {
+                        let newState = !currentState;
+                        writeToStorage(COUNTER_DISPLAYED, newState);
+                        return newState;
+                    });
                     enableClearbutton();
                 }}
             >
@@ -61,23 +68,21 @@ function App() {
                 onClick={() => {
 
                     localStorage.removeItem(COUNTER_DISPLAYED);
-
                     disableClearbutton();
-
-
                 }}
             >
                 Clear m/y
             </button>
-        </div>  */
+        </div>
         //Working Counter Program Till Here......
 
 
 
         //this is wroking Timer Program......
-        <div >
-            <Buttons></Buttons>
-        </div>
+        // <div >
+        //     <Buttons></Buttons>
+        // </div>
+
 
         //this is wroking Form Excercise Program......
         // <div >
