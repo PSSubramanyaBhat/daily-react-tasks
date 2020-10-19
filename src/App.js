@@ -33,7 +33,7 @@ function App() {
 
         // <Counter />
         //Working Counter Program From Here.....
-        
+        /*
         <div className="App">
             {flag && (
                 <Counter
@@ -73,7 +73,7 @@ function App() {
             >
                 Clear m/y
             </button>
-        </div>
+        </div> */
         //Working Counter Program Till Here......
 
 
@@ -82,6 +82,12 @@ function App() {
         // <div >
         //     <Buttons></Buttons>
         // </div>
+
+
+        //this is wroking Timer Program......
+        <div >
+            <TimerDisplay></TimerDisplay>
+        </div>
 
 
         //this is wroking Form Excercise Program......

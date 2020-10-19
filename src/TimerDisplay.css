@@ -1,0 +1,73 @@
+.StartStopTimerButton{
+    /* display: block; */
+    margin-top: 10px;
+    margin-left: 30px;
+    /* background-color: rgb(62, 204, 62); */
+    background-image: linear-gradient(to right, #67DDA3 , rgb(163, 241, 163)), radial-gradient(circle at top left, rgb(160, 155, 233),#342ca3);
+    /* height: 40px;
+    width: 120px; */
+    height: 60px;
+    width: 60px;
+    /* border-radius: 10px; */
+    border-radius: 50%;
+    border: none;
+}
+
+.ResetTimerButton{
+    /* display: inline; */
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: rgba(228, 23, 23, 0.904);
+    /* background-color: purple; */
+    color: white;
+    /* height: 40px;
+    width: 120px; */
+    height: 60px;
+    width: 60px;
+    /* border-radius: 10px; */
+    border-radius: 50%;
+    border-color: white;
+}
+.VerticalBlocks {
+    display: block;
+}
+.rounded-corners-gradient-borders {
+    width: 180px;
+    height: 180px;
+    border: double 3px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #67DDA3 , rgb(163, 241, 163)), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+.DisplayBox {
+    /* border: solid 2px red; */
+    /* border: solid 3px rgb(153, 151, 153); */
+    /* border: solid 3px rgb(113, 115, 228); */
+    border: double 3px transparent;
+    border-radius: 50%;
+    margin: 30px;
+    margin-left: -50px;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #67DDA3 , rgb(163, 241, 163)), radial-gradient(circle at top left, rgb(160, 155, 233),#342ca3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+}
+.CountPadding{
+    padding-top: 46px;
+    padding-left: 78px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.Box--rounded {
+    border-radius: 50%;
+}
+
+.ThickBorder {
+    border-width: 4px;
+}

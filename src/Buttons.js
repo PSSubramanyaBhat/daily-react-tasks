@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 var timer = 0;
 const Buttons = () => {
 
+    /* let [second, setTimer] = useState(0); */
     let [second, setTimer] = useState(0);
 
     return (
